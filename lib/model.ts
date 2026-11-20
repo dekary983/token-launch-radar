@@ -383,7 +383,7 @@ function gasFor(chain: string): string {
   if (c === 'solana') return 'under $0.10 of SOL in fees';
   if (c === 'bitcoin' || c === 'btc') return 'about $2 of BTC in fees';
   if (c.includes('bsc') || c.includes('bnb')) return 'about $0.40 of BNB in gas';
-  if (['arbitrum', 'base', 'optimism', 'zksync era', 'linea', 'scroll', 'mantle', 'blast', 'mode', 'polygon zkEVM'.toLowerCase(), 'opbnb'].includes(c)) return 'about $0.30 of gas on the rollup';
+  if (['arbitrum', 'base', 'optimism', 'zksync era', 'linea', 'scroll', 'mantle', 'blast', 'mode', 'polygon zkevm', 'opbnb'].includes(c)) return 'about $0.30 of gas on the rollup';
   return 'about $1 of gas';
 }
 
